@@ -427,52 +427,8 @@
                 </div>
 
                 <!-- Danh sách bình luận -->
-                <div id="comments-list" class="space-y-4 mb-8 max-h-80 overflow-y-auto pr-3 custom-scrollbar">
-                    <!-- Comment 1 -->
-                    <div class="bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary">
-                        <div class="flex items-center gap-2 mb-1">
-                            <i class="fas fa-user-circle text-rose-300 text-xl"></i>
-                            <h4 class="font-bold text-rose-900">Mèo con</h4>
-                        </div>
-                        <p class="text-gray-700 pl-7">Chúc hai bạn trăm năm hạnh phúc nhé! Ngay gần khu công nghiệp Nhơn Trạch thì bữa đó chắc chắn mình sẽ ghé sớm chung vui.</p>
-                    </div>
-                    <!-- Comment 2 -->
-                    <div class="bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary">
-                        <div class="flex items-center gap-2 mb-1">
-                            <i class="fas fa-user-circle text-rose-300 text-xl"></i>
-                            <h4 class="font-bold text-rose-900">(FPT Polytechnic)</h4>
-                        </div>
-                        <p class="text-gray-700 pl-7">Tuyệt vời quá! Chúc cô dâu chú rể bách niên giai lão nha.</p>
-                    </div>
-                    <!-- Comment 3 -->
-                    <div class="bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary">
-                        <div class="flex items-center gap-2 mb-1">
-                            <i class="fas fa-user-circle text-rose-300 text-xl"></i>
-                            <h4 class="font-bold text-rose-900">ANHDUY(VLU)</h4>
-                        </div>
-                        <p class="text-gray-700 pl-7">Chúc Nhi của tụi mình một đời bình an, hạnh phúc bên anh Nguyện nhé!</p>
-                    </div>
-                    <div class="bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary">
-                        <div class="flex items-center gap-2 mb-1">
-                            <i class="fas fa-user-circle text-rose-300 text-xl"></i>
-                            <h4 class="font-bold text-rose-900">A.MẸC</h4>
-                        </div>
-                        <p class="text-gray-700 pl-7">Hôm nay nhìn em rạng rỡ trong bộ váy cưới, anh thực sự rất vui. Dù chúng ta không thể đồng hành cùng nhau đến cuối chặng đường, nhưng được nhìn thấy em tìm được bến đỗ hạnh phúc và bình yên bên người ấy là điều anh luôn mong đợi. Chúc em và anh ấy sẽ mãi yêu thương, thấu hiểu và cùng nhau xây dựng một gia đình thật trọn vẹn, ấm áp. Chúc mừng hạnh phúc em</p>
-                    </div>
-                    <div class="bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary">
-                        <div class="flex items-center gap-2 mb-1">
-                            <i class="fas fa-user-circle text-rose-300 text-xl"></i>
-                            <h4 class="font-bold text-rose-900">QTÔ</h4>
-                        </div>
-                        <p class="text-gray-700 pl-7">Ngày vui của em, anh xin gửi lời chúc mừng hạnh phúc chân thành nhất từ đáy lòng. Cảm ơn vì một đoạn đường chúng ta đã từng đi qua, và anh thật sự nhẹ lòng khi thấy em đã tìm được một bờ vai vững chắc, một người có thể mang lại cho em nụ cười trọn vẹn nhất. Chúc em từ nay về sau luôn là người phụ nữ hạnh phúc, cùng người ấy nắm tay nhau đi qua mọi bão giông và xây dựng một tổ ấm ngập tràn tiếng cười. Chúc mừng ngày hạnh phúc của em!</p>
-                    </div>
-                    <div class="bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary">
-                        <div class="flex items-center gap-2 mb-1">
-                            <i class="fas fa-user-circle text-rose-300 text-xl"></i>
-                            <h4 class="font-bold text-rose-900">NĐTai`</h4>
-                        </div>
-                        <p class="text-gray-700 pl-7">Đứng ở một góc nhìn em rạng rỡ trong ngày vui, anh tự hỏi nếu ngày đó chúng mình trưởng thành hơn một chút, kết cục liệu có khác đi không? Nhưng thanh xuân không có nếu như, và chúng ta cuối cùng cũng phải chấp nhận việc bỏ lỡ nhau để em tìm được người che chở tốt hơn. Lòng anh có tiếc nuối, có day dứt, nhưng hơn hết vẫn là mong em được hạnh phúc. Hãy khép lại những tổn thương ngày cũ để bắt đầu một hành trình mới thật viên mãn bên mái ấm của riêng mình. Chúc em một đời bình an, trăm năm hạnh phúc.</p>
-                    </div>
+                <div id="wishes-list" class="space-y-4 mb-8 max-h-80 overflow-y-auto pr-3 custom-scrollbar">
+                    
                 </div>
 
                 <!-- Form gửi lời chúc -->
@@ -664,38 +620,99 @@
 
         // --- 6. XỬ LÝ FORM SỔ LƯU BÚT (COMMENTS) ---
         
+        // const wishForm = document.getElementById('wish-form');
+        // const commentsList = document.getElementById('comments-list');
+
+        // wishForm.addEventListener('submit', function(e) {
+        //     e.preventDefault(); // Ngăn chặn tải lại trang
+            
+        //     const nameInput = document.getElementById('guest-name').value.trim();
+        //     const wishInput = document.getElementById('guest-wish').value.trim();
+            
+        //     if (nameInput && wishInput) {
+        //         // Tạo khối bình luận mới
+        //         const newComment = document.createElement('div');
+        //         newComment.className = 'bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary animate-fade-in';
+                
+        //         newComment.innerHTML = `
+        //             <div class="flex items-center gap-2 mb-1">
+        //                 <i class="fas fa-user-circle text-rose-300 text-xl"></i>
+        //                 <h4 class="font-bold text-rose-900">${nameInput}</h4>
+        //             </div>
+        //             <p class="text-gray-700 pl-7">${wishInput}</p>
+        //         `;
+                
+        //         // Thêm vào cuối danh sách
+        //         commentsList.appendChild(newComment);
+                
+        //         // Tự động cuộn xuống dưới cùng để xem lời chúc mới
+        //         commentsList.scrollTop = commentsList.scrollHeight;
+                
+        //         // Xóa form sau khi gửi
+        //         wishForm.reset();
+        //     }
+        // });
+    </script>
+    <!-- Kéo thư viện Firebase (Sử dụng Module) -->
+<script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getDatabase, ref, push, onChildAdded } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+
+        // Cấu hình đã được lấy từ ảnh của bạn
+        const firebaseConfig = {
+            apiKey: "AIzaSyAxzTWQCZchLAyenYiyC24QamlQXUBKz4M",
+            authDomain: "note-d4e3c.firebaseapp.com",
+            projectId: "note-d4e3c",
+            storageBucket: "note-d4e3c.firebasestorage.app",
+            messagingSenderId: "665103823127",
+            appId: "1:665103823127:web:4cdaeeb620f9e6f2a8c752",
+            measurementId: "G-64KSRP4FK5",
+            
+            // BẠN COPY ĐƯỜNG LINK DATABASE VÀO DÒNG DƯỚI NÀY NHÉ:
+            databaseURL: "https://note-d4e3c-default-rtdb.asia-southeast1.firebasedatabase.app/" 
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        const wishesRef = ref(db, 'guestbook_wishes');
+
         const wishForm = document.getElementById('wish-form');
-        const commentsList = document.getElementById('comments-list');
+        const guestNameInput = document.getElementById('guest-name');
+        const guestWishInput = document.getElementById('guest-wish');
+        const wishesList = document.getElementById('wishes-list');
+
+        onChildAdded(wishesRef, (snapshot) => {
+            const data = snapshot.val();
+            const newWishElement = document.createElement('div');
+            newWishElement.className = "bg-pink-50 p-4 rounded-xl shadow-sm text-left animate-fade-in";
+            newWishElement.innerHTML = `
+                <h4 class="font-bold text-gray-800">${escapeHTML(data.name)}</h4>
+                <p class="text-gray-600 text-sm mt-1">${escapeHTML(data.message)}</p>
+            `;
+            wishesList.appendChild(newWishElement);
+            wishesList.scrollTop = wishesList.scrollHeight;
+        });
 
         wishForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Ngăn chặn tải lại trang
-            
-            const nameInput = document.getElementById('guest-name').value.trim();
-            const wishInput = document.getElementById('guest-wish').value.trim();
-            
-            if (nameInput && wishInput) {
-                // Tạo khối bình luận mới
-                const newComment = document.createElement('div');
-                newComment.className = 'bg-rose-50/70 p-4 rounded-2xl border-l-4 border-primary animate-fade-in';
-                
-                newComment.innerHTML = `
-                    <div class="flex items-center gap-2 mb-1">
-                        <i class="fas fa-user-circle text-rose-300 text-xl"></i>
-                        <h4 class="font-bold text-rose-900">${nameInput}</h4>
-                    </div>
-                    <p class="text-gray-700 pl-7">${wishInput}</p>
-                `;
-                
-                // Thêm vào cuối danh sách
-                commentsList.appendChild(newComment);
-                
-                // Tự động cuộn xuống dưới cùng để xem lời chúc mới
-                commentsList.scrollTop = commentsList.scrollHeight;
-                
-                // Xóa form sau khi gửi
-                wishForm.reset();
+            e.preventDefault();
+            const nameVal = guestNameInput.value.trim();
+            const wishVal = guestWishInput.value.trim();
+            if (nameVal !== "" && wishVal !== "") {
+                push(wishesRef, {
+                    name: nameVal,
+                    message: wishVal,
+                    timestamp: Date.now()
+                });
+                guestNameInput.value = "";
+                guestWishInput.value = "";
             }
         });
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, tag => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+            }[tag]));
+        }
     </script>
 </body>
 </html>
